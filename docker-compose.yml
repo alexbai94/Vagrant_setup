@@ -8,6 +8,8 @@ services:
       links:
         - db:postgres
         - elasticsearch:elasticsearch
+        - php:domyouji/trait-module
+        - jbrowse:erasche/jbrowse
       volumes:
         - /var/www/html/sites
         - /var/www/private
@@ -34,3 +36,17 @@ services:
 
     elasticsearch:
       image: elasticsearch
+
+    php:
+      image: domyouji/trait-module
+      volumes:
+        - /var/www/html
+      ports:
+        - "9991:80"
+
+    jbrowse:
+      image: erasche/jbrowse
+      volumes:
+        - ./example:/data
+      ports:
+        - "9992:80"
