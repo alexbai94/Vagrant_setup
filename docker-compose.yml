@@ -19,6 +19,7 @@ services:
         BASE_URL: "http://192.168.33.11:3000/tripal"
         BASE_URL_PROTO: "http://"
         DB_NAME: 'postgres'
+        SITE_NAME: "Genomic Web Portal"
       ports:
         - "3000:80"
 
