@@ -43,7 +43,7 @@ services:
       volumes:
         - /var/www/html
       ports:
-        - "9991:80"
+        - "9001:80"
 
     jbrowse:
       image: erasche/jbrowse
