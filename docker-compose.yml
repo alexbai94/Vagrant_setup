@@ -39,7 +39,7 @@ services:
       image: elasticsearch
 
     php:
-      image: domyouji/trait-module
+      image: domyouji/trait-module2
       volumes:
         - /var/www/html
       ports:
