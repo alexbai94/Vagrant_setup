@@ -39,11 +39,11 @@ services:
       image: elasticsearch
 
     php:
-      image: domyouji/trait-module2
+      image: domyouji/trait-module3
       volumes:
         - /var/www/html
       ports:
-        - "9001:80"
+        - "9991:80"
 
     jbrowse:
       image: erasche/jbrowse
